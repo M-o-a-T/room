@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -3560,6 +3560,7 @@ Source: avr.lbr</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="wires" width="0.5" drill="0">
+<clearance class="1" value="0.35"/>
 </class>
 </classes>
 <parts>
@@ -3570,7 +3571,7 @@ Source: avr.lbr</description>
 <part name="C2" library="common" deviceset="C" device="C0603" value="15n"/>
 <part name="C3" library="common" deviceset="C" device="C0603" value="15n"/>
 <part name="C1" library="common" deviceset="CP" device="1206" value="0.1µ"/>
-<part name="BGND" library="common" deviceset="WAGO_243" device="" value="WAGO_243"/>
+<part name="B_GND" library="common" deviceset="WAGO_243" device="" value="WAGO_243"/>
 <part name="B_24V" library="common" deviceset="WAGO_243" device="" value="WAGO_243"/>
 <part name="H1V" library="common" deviceset="PINHD-1X1" device="" value="WAGO_243"/>
 <part name="H1" library="common" deviceset="PINHD-1X1" device="" value="WAGO_243"/>
@@ -3604,6 +3605,7 @@ Source: avr.lbr</description>
 <part name="H2" library="common" deviceset="PINHD-1X1" device="" value="WAGO_243"/>
 <part name="R5" library="common" deviceset="R-EU_" device="M0805"/>
 <part name="R6" library="common" deviceset="R-EU_" device="M0805"/>
+<part name="_GND" library="common" deviceset="WAGO_243" device="" value="WAGO_243"/>
 </parts>
 <sheets>
 <sheet>
@@ -3617,7 +3619,7 @@ Source: avr.lbr</description>
 <instance part="C2" gate="G$1" x="25.4" y="73.66" rot="R90"/>
 <instance part="C3" gate="G$1" x="25.4" y="63.5" rot="R90"/>
 <instance part="C1" gate="G$1" x="33.02" y="83.82"/>
-<instance part="BGND" gate="G$1" x="15.24" y="99.06" smashed="yes">
+<instance part="B_GND" gate="G$1" x="15.24" y="99.06" smashed="yes">
 <attribute name="NAME" x="8.89" y="102.235" size="1.778" layer="95"/>
 </instance>
 <instance part="B_24V" gate="G$1" x="15.24" y="121.92" smashed="yes">
@@ -3671,6 +3673,9 @@ Source: avr.lbr</description>
 </instance>
 <instance part="R5" gate="G$1" x="132.08" y="93.98"/>
 <instance part="R6" gate="G$1" x="132.08" y="99.06"/>
+<instance part="_GND" gate="G$1" x="22.86" y="99.06" smashed="yes">
+<attribute name="NAME" x="16.51" y="102.235" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 <bus name="B1,B2,B3,B4">
@@ -3742,7 +3747,7 @@ Source: avr.lbr</description>
 <junction x="20.32" y="63.5"/>
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="33.02" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="BGND" gate="G$1" pin="1"/>
+<pinref part="B_GND" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="99.06" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="93.98" x2="12.7" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
@@ -3803,6 +3808,9 @@ Source: avr.lbr</description>
 <pinref part="Q3" gate="&gt;NAME" pin="S"/>
 <wire x1="27.94" y1="96.52" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
 <junction x="27.94" y="93.98"/>
+<pinref part="_GND" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="99.06" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
+<junction x="12.7" y="99.06"/>
 </segment>
 </net>
 <net name="5V" class="1">
