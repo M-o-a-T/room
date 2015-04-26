@@ -3857,6 +3857,21 @@ General-purpose diode for high-speed switching</description>
 <wire x1="20.32" y1="99.06" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
 <junction x="12.7" y="99.06"/>
 </segment>
+<segment>
+<pinref part="J_1" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="121.92" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="J_2" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="106.68" x2="165.1" y2="121.92" width="0.1524" layer="91"/>
+<junction x="165.1" y="106.68"/>
+<pinref part="J_3" gate="G$1" pin="1"/>
+<pinref part="J_4" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="76.2" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="91.44" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
+<junction x="165.1" y="91.44"/>
+</segment>
 </net>
 <net name="5V" class="1">
 <segment>
@@ -4090,23 +4105,6 @@ General-purpose diode for high-speed switching</description>
 <pinref part="IC1" gate="G$1" pin="PB1(OC1A)"/>
 <wire x1="86.36" y1="91.44" x2="86.36" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="73.66" x2="119.38" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$41" class="1">
-<segment>
-<pinref part="J_1" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="121.92" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="J_2" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="106.68" x2="165.1" y2="121.92" width="0.1524" layer="91"/>
-<junction x="165.1" y="106.68"/>
-<pinref part="J_3" gate="G$1" pin="1"/>
-<pinref part="J_4" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="76.2" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="91.44" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="91.44" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
-<junction x="165.1" y="91.44"/>
 </segment>
 </net>
 </nets>
