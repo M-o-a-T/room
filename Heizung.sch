@@ -415,22 +415,6 @@ DIN A5, landscape with doc field</description>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="C0805">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
-</package>
 <package name="C1206">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
@@ -2265,16 +2249,32 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<wire x1="-2.75" y1="7" x2="-2.75" y2="-4" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="-4" x2="-2.75" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="-4.5" x2="2.75" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="-4.5" x2="2.75" y2="-4" width="0.127" layer="21"/>
-<wire x1="2.75" y1="-4" x2="2.75" y2="7" width="0.127" layer="21"/>
-<wire x1="2.75" y1="7" x2="-2.75" y2="7" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="7" x2="-3.25" y2="7" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="7" x2="-3.25" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="-4.5" x2="-2.75" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="-4" x2="2.75" y2="-4" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="7.3" x2="-2.75" y2="-4" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-4" x2="-2.75" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-4.7" x2="3.05" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="3.05" y1="-4.7" x2="3.05" y2="-4" width="0.127" layer="21"/>
+<wire x1="3.05" y1="-4" x2="3.05" y2="7.3" width="0.127" layer="21"/>
+<wire x1="3.05" y1="7.3" x2="-2.75" y2="7.3" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="7.3" x2="-3.65" y2="7.3" width="0.127" layer="21"/>
+<wire x1="-3.65" y1="7.3" x2="-3.65" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="-3.65" y1="-4.7" x2="-2.75" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-4" x2="3.05" y2="-4" width="0.127" layer="21"/>
+</package>
+<package name="C0805">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="0" y="1.27" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1.27" layer="27" font="vector" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
 </packages>
 <symbols>
